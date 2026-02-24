@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+
+<style>
+    *{
+    box-sizing: border-box;
+    }
+    .all{
+        max-width: 1366px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    body{
+        margin: 0;
+    }
+    .container{
+        margin: 0;
+        width: 100%;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        padding: 20px 83px;
+        gap: 30px;
+        align-items: center;
+        
+    }
+    .logo{
+        width: 200px;
+        height: 60px;
+        border-radius: 8px;
+        background-color: #E2E2E2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .menu{
+        width: 820px;
+        height: 34px;
+        border-radius: 8px;
+        background-color: #E2E2E2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .button{
+        width: 120px;
+        height: 42px;
+        border-radius: 8px;
+        background-color: #E2E2E2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .main{
+        background-color: #F1F1F1;
+        height: 680px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 0;
+    }
+    .main2{
+        background-color: #F1F1F1;
+        height: 580px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 0;
+        flex-direction: column;
+    }
+    .content{
+        width: 585px;
+        height: 267px;
+        border-radius: 8px;
+        background-color: #E2E2E2;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .image{
+        width: 585px;
+        height: 520px;
+        border-radius: 8px;
+        background-color: #E2E2E2;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .title{
+        width: 600px;
+        height: 80px;
+        background-color: #E2E2E2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin: 80px auto 40px auto;
+
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+    }
+    .grid{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 380px);
+        gap: 30px;
+    }
+    .item{
+        width: 380px;
+        height: 420px;
+        background-color: #E2E2E2;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .title2{
+        width: 600px;
+        height: 80px;
+        background-color: #E2E2E2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 40px auto;
+        border-radius: 8px;
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+    }
+    .title3{
+        width: 600px;
+        height: 80px;
+        background-color: #E2E2E2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 40px auto;
+        border-radius: 8px;
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+    }
+    .itemmain{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(5, 216px);
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .itemmain2{
+        display: grid;
+        grid-template-columns: repeat(4, 277.5px);
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .itemmain div{
+        width: 216px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-color: #E2E2E2;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .itemmain2 div{
+        width: 277.5px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background-color: #E2E2E2;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .footer{
+        width: 100%;
+        height: 72px;
+        background-color: #E2E2E2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+</style>
+    <title>web0</title>
+</head>
+<body>
+<div class="all">
+<div class="container">
+    <header>
+        <div class="logo">Logo</div>    
+        <div class="menu">Menu</div>
+        <div class="button">Button</div>
+    </header>
+    <section class="main">
+        <div class="content">Content</div>
+        <div class="image">Image</div>
+    </section>
+</div>
+<div class="container2">
+    <div class="title">Title</div>
+    <div class="grid">
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+    </div>
+</div>
+<div class="container3">
+    <section class="main2">
+        <div class="title2">Title</div>
+        
+        <div class="itemmain">
+            <div>Item</div>
+            <div>Item</div>
+            <div>Item</div>
+            <div>Item</div>
+            <div>Item</div>
+        </div>
+    </section>
+</div>
+<div class="container4">
+    <div>
+    <div class="title3">Title</div>
+
+    <div class="itemmain2">
+        <div>Item</div>
+        <div>Item</div>
+        <div>Item</div>
+        <div>Item</div>
+    </div>
+</div>
+<div class="container5">
+    <section class="footer">Footer</section>
+</div>
+</div>
+</body>
+</html>
