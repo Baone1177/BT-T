@@ -8,16 +8,14 @@
     *{
     box-sizing: border-box;
     }
-    .all{
-        max-width: 1366px;
-        margin: 0 auto;
-        width: 100%;
-    }
     body{
         margin: 0;
     }
+    .section{
+        padding: 80px 0 0;
+    }
     .container{
-        margin: 0;
+        margin: 0 auto;
         width: 100%;
     }
     header{
@@ -81,7 +79,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 80px 0;
         flex-direction: column;
     }
     .content{
@@ -116,7 +113,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 8px;
-        margin: 80px auto 40px auto;
+        margin: 0 auto 40px;
 
         font-family: 'Lora', serif;
         font-weight: 700;
@@ -137,6 +134,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         font-family: 'Be Vietnam Pro', sans-serif;
         font-weight: 700;
         font-size: 20px;
@@ -148,8 +146,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto 40px auto;
+        margin: 0 auto 40px;
         border-radius: 8px;
+
         font-family: 'Lora', serif;
         font-weight: 700;
         font-size: 20px;
@@ -162,8 +161,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto 40px auto;
+        margin: 0 auto 40px;
         border-radius: 8px;
+
         font-family: 'Lora', serif;
         font-weight: 700;
         font-size: 20px;
@@ -172,37 +172,36 @@
     .itemmain{
         justify-content: center;
         display: grid;
-        grid-template-columns: repeat(5, 216px);
+        grid-template-columns: repeat(5, minmax(50px, 216px));
         gap: 30px;
-        flex-wrap: wrap;
     }
     .itemmain2{
         display: grid;
-        grid-template-columns: repeat(4, 277.5px);
+        grid-template-columns: repeat(4, minmax(50px, 277.5px));
         gap: 30px;
         justify-content: center;
         flex-wrap: wrap;
     }
     .itemmain div{
-        width: 216px;
         height: 300px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 8px;
         background-color: #E2E2E2;
+
         font-family: 'Be Vietnam Pro', sans-serif;
         font-weight: 700;
         font-size: 20px;
     }
     .itemmain2 div{
-        width: 277.5px;
         height: 300px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 8px;
         background-color: #E2E2E2;
+
         font-family: 'Be Vietnam Pro', sans-serif;
         font-weight: 700;
         font-size: 20px;
@@ -214,7 +213,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 80px;
+
         font-family: 'Be Vietnam Pro', sans-serif;
         font-weight: 700;
         font-size: 20px;
@@ -223,30 +222,32 @@
     <title>web0</title>
 </head>
 <body>
-<div class="all">
 <div class="container">
-    <header>
-        <div class="logo">Logo</div>    
-        <div class="menu">Menu</div>
-        <div class="button">Button</div>
-    </header>
-    <section class="main">
-        <div class="content">Content</div>
-        <div class="image">Image</div>
-    </section>
+        <header>
+            <div class="logo">Logo</div>    
+            <div class="menu">Menu</div>
+            <div class="button">Button</div>
+        </header>
+        <section class="main">
+            <div class="content">Content</div>
+            <div class="image">Image</div>
+        </section>
 </div>
-<div class="container2">
-    <div class="title">Title</div>
-    <div class="grid">
-        <div class="item">Item</div>
-        <div class="item">Item</div>
-        <div class="item">Item</div>
-        <div class="item">Item</div>
-        <div class="item">Item</div>
-        <div class="item">Item</div>
+<div class="section">
+    <div class="container">
+        <div class="title">Title</div>
+        <div class="grid">
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+            <div class="item">Item</div>
+        </div>
     </div>
 </div>
-<div class="container3">
+<div class="section">
+    <div class="container">
     <section class="main2">
         <div class="title2">Title</div>
         
@@ -259,7 +260,8 @@
         </div>
     </section>
 </div>
-<div class="container4">
+<div class="section">
+    <div class="container">
     <div>
     <div class="title3">Title</div>
 
@@ -270,9 +272,11 @@
         <div>Item</div>
     </div>
 </div>
-<div class="container5">
+<div class="section">
+    <div class="container">
     <section class="footer">Footer</section>
 </div>
 </div>
 </body>
 </html>
+
