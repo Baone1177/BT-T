@@ -110,4 +110,5 @@ header{
 .footer{
     height: 72px;
     width: 100%;
+    border-radius: 0%;
 }
