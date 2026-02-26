@@ -1,0 +1,113 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+:root {
+    --color-primary:    #333333;
+    --color-secondary:  #E2E2E2;
+    --background:       #F1F1F1; 
+    --font-primary:       "Be Vietnam Pro", sans-serif;
+    --font-secondary:     "Lora", serif;
+}
+.box{
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.container{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+header{
+    padding: 20px 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.logo{
+    width: 200px;
+    height: 60px;
+}
+.menu{
+    height: 34px;
+    flex: 1;
+}
+.button{
+    height: 42px;
+    width: 120px;
+}
+.title{
+    width: 600px;
+    height: 80px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    font-family: var(--font-secondary);
+}
+.section1{
+    background-color: var(--background);
+    padding: 80px 0;
+}
+.section1 .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.content{
+    height: 267px;
+    width: calc(50% - 15px);
+}
+.image{
+    height: 520px;
+    width: calc(50% - 15px);
+}
+.section2{
+    padding: 80px 0;
+}
+.section2 .main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.section2 .item{
+    height: 420px;
+    width: calc((100% - 60px)/3);
+}
+.section3{
+    background-color: var(--background);
+    padding: 80px 0;
+}
+.section3 .main{
+    display: flex;
+    gap: 30px;
+}
+.section3 .item{
+    height: 300px;
+    width: calc((100% - 120px)/5);
+}
+.section4{
+    padding: 80px 0;
+}
+.section4 .main{
+    display: flex;
+    gap: 30px;
+}
+.section4 .item{
+    height: 300px;
+    width: calc((100% - 90px)/4);
+}
+.footer{
+    height: 72px;
+    width: 100%;
+}
