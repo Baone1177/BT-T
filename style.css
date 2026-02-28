@@ -112,3 +112,123 @@ header{
     width: 100%;
     border-radius: 0%;
 }
+@media (max-width: 1024px) and (min-width: 600px) {
+    .container{
+    max-width: 720px;
+    width: 95%;
+    margin: 0 auto;
+    }
+    header{
+        padding: 15px 0;
+    }
+    .logo{
+        width: 140px;
+        height: 42px;
+    }
+    .button{
+        width: 102px;
+        height: 36px;
+    }
+    .content{
+        height: 267px;
+        width: calc(50% - 15px);
+    }
+    .image{
+        height: 310px;
+        width: calc(50% - 15px);
+    }
+    .title{
+        max-width: 720px;
+    }
+    .section1{
+        padding: 60px 0;
+    }
+    .section2{
+        padding: 60px 0;
+    }
+    .section2 .item{
+        width: calc((100% - 30px)/2);
+    }
+    .section3{
+        padding: 60px 0;
+    }
+    .section3 .main{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .section3 .item{
+        height: 300px;
+        width: calc((100% - 60px)/3);
+    }
+    .section4{
+        padding: 60px 0;
+    }
+    .section4 .main{
+        flex-wrap: wrap;
+    }
+    .section4 .item{
+        width: calc((100% - 30px)/2);
+    }
+}
+@media (max-width: 660px) {
+    header{
+        padding: 18px 0;
+    }
+    .header .main{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu{
+        width: 66px;
+        height: 36px;
+        flex: none;
+        order: -1;
+        padding: 0 12px 0 11px;
+    }
+    .container{
+    max-width: 546px;
+    width: 95%;
+    margin: 0 auto;
+    }
+    .section1{
+        padding: 45px 0;
+    }
+    .section1 .main{
+        flex-wrap: wrap;
+    }
+    .content{
+        width: 546px;
+        height: 267px;
+    }
+    .image{
+        width: 546px;
+        height: 491px;
+        order: -1;
+    }
+    .section2{
+        padding: 45px 0;
+    }
+    .section2 .item{
+        height: 420px;
+        width: 546px;
+    }
+    .section3{
+        padding: 45px 0;
+    }
+    .section3 .main{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .section3 .item{
+        width: calc((100% - 30px)/2);
+    }
+    .section4{
+        padding: 45px 0;
+    }
+    .section4 .main{
+        flex-wrap: wrap;
+    }
+    .section4 .item{
+        width: calc((100% - 30px)/2);
+    }
+}
